@@ -1,0 +1,18 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~
+FONT FAMILY
+~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@mixin font-face($font-family, $url, $weight) {
+	@font-face {
+		font-family: '#{$font-family}';
+		src: url('#{$url}.eot');
+		src: url('#{$url}.eot?#iefix') format('embedded-opentype'),
+			url('#{$url}.woff2') format('woff2'),
+			url('#{$url}.woff') format('woff'),
+			url('#{$url}.ttf') format('truetype'),
+			url('#{$url}.svg#Calibri') format('svg');
+		font-weight: #{$weight};
+		font-display: swap;
+		font-style: normal;
+	}
+}
+
