@@ -12,6 +12,17 @@ body {
     color: #000;
 }
 
+.body {
+	height: 1px;
+	min-height: 100vh;
+}
+
+.global-wrap {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
 /*--------------------------------Common--------------------------------*/
 .container {
     margin-right: auto;
@@ -32,8 +43,8 @@ body {
     }
 }
 
-@import "./components/blocks";
 @import "./components/btns";
+@import "./components/blocks";
 @import "./components/header";
 @import "./components/footer";
 

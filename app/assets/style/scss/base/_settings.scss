@@ -1,3 +1,42 @@
 /*~~~~~~~~~~~~~~~~~~~~~~~~~
 ОБЩИЕ СТИЛИ
 ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~
+ОБЩИЕ СТИЛИ
+~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.flex {
+	display: flex;
+}
+
+.flex-wrap {
+	@extend .flex;
+	flex-wrap: wrap;
+}
+
+/*Общие стили сетки*/
+.vt-center {
+	@extend .flex;
+	align-items: center;
+}
+
+.gt-center {
+	@extend .flex;
+	justify-content: center;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.for-table {
+	display: none;
+
+	@include table {
+		display: block;
+	}
+}
+
+.color-primary {
+	color: var(--color-primary);
+}

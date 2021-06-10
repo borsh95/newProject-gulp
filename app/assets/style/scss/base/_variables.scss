@@ -2,13 +2,27 @@
 VARIABLES
 ~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+$color-primary: #0749AA;
+
 :root {
 	/*font-family*/
-	--font-family: "Montserrat", sans-serif;
+	--fm-1: "Roboto Condensed", sans-serif;
 
 	/*colors*/
+	--basic-black: #000;
+	--basick-dark: #333;
+	--basick-white: #fff;
+	
+	--color-primary: #{$color-primary};
 }
 
+//breakpoints
+$desctop: 1920;
+$desctop-mid: 1450;
+$desctop-min: 1170;
+$table: 970;
+$mobile: 768;
+$tel: 480;
 
 /***********************Main*/
 $duration: 0.3s;
