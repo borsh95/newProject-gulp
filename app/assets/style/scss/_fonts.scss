@@ -1,18 +1,19 @@
 /*~~~~~~~~~~~~~~~~~~~~~~~~~
 FONT FAMILY
 ~~~~~~~~~~~~~~~~~~~~~~~~~*/
-@mixin font-face($font-family, $url, $weight) {
+@mixin font-face($font-family, $weight, $url, $file-name) {
 	@font-face {
 		font-family: '#{$font-family}';
-		src: url('#{$url}.eot');
-		src: url('#{$url}.eot?#iefix') format('embedded-opentype'),
-			url('#{$url}.woff2') format('woff2'),
-			url('#{$url}.woff') format('woff'),
-			url('#{$url}.ttf') format('truetype'),
-			url('#{$url}.svg#Calibri') format('svg');
+		src: url('#{$url}#{$file-name}.woff2') format('woff2'),
+		url('#{$url}#{$file-name}.woff') format('woff');
 		font-weight: #{$weight};
 		font-display: swap;
 		font-style: normal;
 	}
 }
 
+@include font-face("Lato", 300, "./../../fonts/", "latolight");
+@include font-face("Lato", 400, "./../../fonts/", "latoregular");
+@include font-face("Lato", 500, "./../../fonts/", "latomedium");
+@include font-face("Lato", 600, "./../../fonts/", "latosemibold");
+@include font-face("Lato", 800, "./../../fonts/", "latoblack");

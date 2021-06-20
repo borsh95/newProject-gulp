@@ -1,3 +1,255 @@
 /*~~~~~~~~~~~~~~~~~~~~~~~~~
 COMMON BUTTON
 ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+%base {
+	--height: 40px;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 12px;
+	line-height: 1;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: calc(var(--height) / 2);
+}
+
+.btn {
+	--height: 39px;
+	--fz: 14px;
+	--color: var(--basick-black);
+	--colorBg: var(--basick-white);
+
+	@extend %base;
+	
+	padding: 0 16px;
+	height: var(--height);
+	font-size: var(--fz);
+	color: var(--color);
+	background-color: var(--colorBg);
+	border: 3px solid var(--colorBg);
+	border-radius: calc(var(--height) / 2);
+	transition: all 150ms ease-in-out;
+
+	svg {
+		transition: all $duration;
+	}
+
+	&:hover {
+		background-color: transparent;
+		color: var(--colorBg);
+
+		svg {
+			fill: var(--color-primary);
+		}
+	}
+
+	&--secondary {
+		--color: var(--basick-white);
+		--colorBg: var(--basick-red);
+	}
+}
+
+.btn-trt {
+	@extend %base;
+	padding: 0 16px;
+	min-width: 210px;
+	height: 50px;
+	font-size: 16px;
+	border-radius: 25px;
+	background-color: rgba($basick-white, 0.87);
+	transition: all 150ms ease-in-out;
+
+	&:hover {
+		color: var(--basick-white);
+		background-color: var(--color-primary);
+	}
+}
+
+.btn-log-in {
+	--height: 41px;
+	@extend %base;
+	padding: 0 19px;
+	height: 41px;
+	font-weight: 600;
+	font-size: 14px;
+	color: var(--basick-white);
+	border: 2px solid var(--basick-white);
+	transition-property: background-color, color;
+	transition-duration: $duration;
+	
+	svg {
+		margin-right: getEm(9, 14);
+		width: getEm(16, 14);
+		height: getEm(16, 14);
+		fill: currentColor;
+		transition: fill $duration;
+	}
+
+	&:hover {
+		color: var(--basick-black);
+		background-color: var(--basick-white);
+	}
+}
+
+.btn-wholesale, 
+.btn-callback {
+	--heght: 43px;
+	--color: var(--basick-white);
+	--colorBg: var(--color-primary);
+	min-width: 215px;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.btn-wholesale {
+	svg {
+		margin-right: 8px;
+		width: 20px;
+		height: 20px;
+		fill: #fff;
+	}
+}
+
+.btn-basket {
+	svg {
+		width: 37px;
+		height: 32px;
+		fill: var(--basick-white);
+	}
+
+	&--circ {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 51px;
+		height: 51px;
+		background-color: var(--color-primary);
+		border: 2px solid var(--color-primary);
+		border-radius: 50%;
+		transition: all 150ms ease-in-out;
+
+		&:hover {
+			background-color: transparent;
+
+			svg {
+				fill: var(--color-primary);
+			}
+		}
+
+		svg {
+			width: 57.57%;
+			height: 57.57%;
+			transition: inherit;
+		}
+	}
+}
+
+/*v-up*/
+.v-up {
+	cursor: pointer;
+	position: fixed;
+	right: 30px;
+    bottom: 25px;
+	z-index: 500;
+	width: 60px;
+	height: 60px;
+	background-color: #fff;
+	border: 3px solid var(--color-primary);
+	border-radius: 50%;
+	opacity: 0;
+	pointer-events: none;
+	transition: background-color $duration, opacity $duration;
+
+	&.active {
+		opacity: 1;
+		pointer-events: all;
+	}
+
+	&:hover {
+		background-color: var(--color-primary);
+
+		&::before,
+		&::after {
+			background-color: #fff;
+		}
+	}
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		top: 60%;
+		left: 40%;
+		width: 35%;
+		height: 7%;
+		background-color: var(--color-primary);
+		transition: background-color $duration;
+	}
+
+	&::before {
+		border-radius: 0px 3px 3px 0;
+		transform-origin: right top;
+		transform: rotate(45deg);
+	}
+
+	&::after {
+		margin-left: -15.4%;
+		border-radius: 3px 0 0 3px;
+		transform-origin: left top;
+		transform: rotate(-45deg);
+	}
+
+	@include table {
+		right: 13px;
+		width: 60px;
+		height: 60px;
+	}
+
+	@include mobile {
+		right: 20px;
+		width: 50px;
+		height: 50px;
+	}
+}
+
+/*hamburger*/
+.hamburger {
+	cursor: pointer;
+	box-sizing: content-box;
+	position: relative;
+	padding: 10px;
+	width: 30px;
+	height: 21px;
+
+	span,
+	span::before,
+	span::after {
+		position: absolute;
+		display: block;
+		width: 30px;
+		height: 2.5px;
+		background-color: var(--basick-white);
+		border-radius: 1.25px;
+	}
+
+	span {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	span::before,
+	span::after {
+		content: "";
+		left: 0;
+	}
+
+	span::before {
+		top: -9px;
+	}
+
+	span::after {
+		bottom: -9px;
+	}
+}

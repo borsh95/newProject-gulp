@@ -1,3 +1,161 @@
 /*~~~~~~~~~~~~~~~~~~~~~~~~~
 HEADER
 ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+header {
+	padding: 37px 0 40px;
+	color: var(--basick-white);
+	background-color: var(--basick-black);
+
+	@include desctop-min {
+		padding: 30px 0 33px;
+	}
+
+	@include table {
+		padding: 26px 0 22px;
+	}
+}
+
+.header {
+	&__top {
+		display: flex;
+		align-items: center;
+	}
+
+	&__menu {
+		margin: 0 auto;
+		height: auto;
+		transition: width 0s $duration, height 0s $duration, opacity $duration $duration;
+
+		.header__search.active ~ & {
+			overflow: hidden;
+			width: 0;
+			height: 0;
+			opacity: 0;
+			pointer-events: none;
+			transition: width 0s, opacity 0s;
+		}
+	}
+
+	&__search {
+		order: 1;
+		margin: 0 13px 0 auto;
+	}
+
+	&__btn-log-in {
+		flex-shrink: 0;
+		order: 1;
+	}
+
+	&__middle {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 37px;
+	}
+
+	&__logo {
+		margin: 0 60px;
+	}
+
+	&__bottom {
+		display: flex;
+		align-items: center;
+		margin-top: 80px;
+	}
+
+	&__sci-link svg,
+	&__btn-basket svg {
+		transition: fill $duration;
+	}
+
+	&__sci-link:hover svg {
+		fill: var(--basick-white);
+	}
+
+	&__btn-basket:hover svg {
+		fill: var(--color-primary);
+	}
+
+	&__category-nav {
+		margin: 0 auto;
+	}
+
+	&__btn-basket {
+		margin-left: auto;
+	}
+
+	&__hamburger {
+		display: none;
+	}
+
+	@include desctop-min {
+		&__bottom {
+			margin-top: 55px;
+		}
+	}
+
+	@include table {
+		&__inner,
+		&__bottom {
+			display: flex;
+			align-items: center;
+		}
+
+		@at-root &__menu,
+		&__search,
+		&__btn-log-in,
+		&__category-nav,
+		&__sci .sci__link--tel,
+		&__sci-link,
+		.btn-callback,
+		.btn-wholesale {
+			display: none;
+		}
+
+		&__middle {
+			margin: 0 auto;
+		}
+
+		&__logo {
+			margin: 0;
+			font-size: 20px;
+		}
+
+		&__bottom {
+			margin: 0;
+		}
+
+		&__hamburger {
+			right: -10px;
+			margin-left: -5px;
+			display: block;
+		}
+
+		&__btn-basket {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			margin-left: auto;
+			width: 40px;
+			height: 40px;
+			background-color: var(--color-primary);
+			border-radius: 50%;
+
+			svg {
+				width: 57.57%;
+				height: 57.57%;
+			}
+		}
+	}
+
+	@include tel {
+		&__logo {
+			font-size: 13.5px;
+		}
+
+		&__btn-basket {
+			width: 33px;
+			height: 33px;
+		}
+	}
+}

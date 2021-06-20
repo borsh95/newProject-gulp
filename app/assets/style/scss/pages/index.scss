@@ -1,0 +1,196 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~
+INDEX PAGE
+~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.index-pg {
+	main {
+		padding-bottom: 235px;
+	}
+
+	.products-carousel {
+		margin-top: 80px;
+	}
+
+	.category{
+		margin-top: 120px;
+	}
+
+	.photo-reviews {
+		margin-top: 130px;
+	}
+
+	@include desctop-min {
+		main {
+			padding-bottom: 180px;
+		}
+
+		.products-carousel {
+			margin-top: 40px;
+		}
+
+		.category{
+			margin-top: 70px;
+		}
+
+		.photo-reviews {
+			margin-top: 120px;
+		}
+	}
+
+	@include mobile {
+		main {
+			padding-bottom: 110px;
+		}
+
+		.products-carousel {
+			margin-top: 25px;
+		}
+
+		.category{
+			margin-top: 36px;
+		}
+
+		.photo-reviews {
+			margin-top: 36px;
+		}
+	}
+}
+
+/*starting*/
+.starting {
+	background-color: var(--basick-black);
+
+	&__container {
+		position: relative;
+		min-height: 515px;
+
+		background-repeat: no-repeat;
+		background-position: right bottom;
+	}
+
+	&__inner {
+		justify-content: space-between;
+	}
+
+	&__textBox {
+		position: relative;
+		z-index: 2;
+		padding-top: 50px;
+	}
+
+	&__bg {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: 0;
+		width: 54.7%;
+	}
+
+	&__subtitle {
+		display: block;
+		margin-bottom: getEm(14, 48);
+		font: 300 48px var(--fm-1);
+		text-transform: uppercase;
+		color: var(--basick-white);
+
+		br {
+			display: none;
+		}
+	}
+
+	h1 {
+		margin-bottom: getEm(95, 96);
+		font-size: 96px;
+		line-height: 1;
+		color: var(--color-primary);
+	}
+
+	.btn {
+		--height: 3.55em;
+
+		min-width: getEm(322, 18);
+		font-size: 18px;
+	}
+
+	@include desctop-min {
+		
+		h1 {
+			font-size: 62px;
+		}
+
+		&__subtitle {
+			margin-bottom: 0.3em;
+			font-size: 36px;
+		}
+
+		.btn {
+			font-size: 16px;
+		}
+	}
+
+	@include table {
+		text-align: center;
+
+		&__container {
+			padding-bottom: 480px;
+			min-height: auto;
+			background-position: center bottom;
+			background-size: 43%;
+		}
+
+		&__inner {
+			flex-direction: column;
+			padding: 48px 0 5px;
+		}
+
+		&__subtitle {
+			font-size: 32px;
+		}
+
+		&__bg {
+			margin: 20px auto 0;
+			width: 70%;
+		}
+
+		h1 {
+			font-size: 62px;
+		}
+
+		.btn {
+			font-size: 16px;
+		}
+	}
+
+	@include mobile {
+		
+		&__container {
+			padding-bottom: 350px;
+			background-size: 230px;
+		}
+
+		&__subtitle {
+			font-size: 24px;	
+		}
+
+		&__bg {
+			width: auto;
+		}
+
+		h1 {
+			margin-bottom: 50px;
+			font-size: 48px;
+		}
+
+		.btn {
+			min-width: getEm(255, 18);
+			height: getEm(51, 18);
+			font-size: 18px;
+		}
+	}
+
+	@include tel {
+		&__container {
+			padding-bottom: 270px;
+			background-size: 180px;
+		}
+	}
+}

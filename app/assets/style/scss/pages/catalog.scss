@@ -1,0 +1,24 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~
+CATALOG PAGE
+~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.catalog-pg {
+	main {
+		padding: 63px 0 100px;
+	}
+
+	.title-wrap {
+		margin-bottom: 112px; 
+	}
+
+	@include desctop-min {
+		.title-wrap {
+			margin-bottom: 90px; 
+		}
+	}
+
+	@include mobile {
+		.title-wrap {
+			margin-bottom: 57px; 
+		}
+	}
+}

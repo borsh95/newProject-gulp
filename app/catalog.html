@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="ArtBro">
+	<title>Главная</title>
+	<!-- swiper -->
+	<link rel="stylesheet" href="./assets/style/css/libraries/swiper-bundle.min.css">
+	<!-- aos animate -->
+	<link rel="stylesheet" href="./assets/style/css/libraries/aos.css">
+	<link rel="stylesheet" href="./assets/style/css/style.css">
+</head>
+
+<body>
+	<!-- MOBILE NAV -->
+	<div class="mobile-menu">
+		<div class="mobile-menu__inner">
+			<div class="mobile-menu__head vt-center">
+				<form class="mobile-menu__search search" method="get" action="#">
+					<div class="search__inner flex">
+						<input class="search__input" type="text" value="" name="search" id="s"
+							placeholder="Поиск товаров">
+						<button class="search__btn" type="submit" aria-label="Искать">
+							<svg>
+								<use href="./assets/img/components/header_footer/sprite.svg#search-ic"></use>
+							</svg>
+						</button>
+					</div>
+				</form>
+				<a class="mobile-menu__btn-log-in btn-log-in" href="#">
+					<svg>
+						<use href="./assets/img/components/header_footer/sprite.svg#user-ic"></use>
+					</svg>
+					Войти
+				</a>
+
+				<button class="mobile-menu__close" type="button" aria-label="Закрыть меню"></button>
+			</div>
+			<div class="mobile-menu__body">
+				<ul class="mobile-menu__nav">
+					<li><a href="#">ЭЛИТНАЯ БИЖУТЕРИЯ</a></li>
+					<li><a href="#">GRANDE STELLA</a></li>
+					<li><a href="#">CRYSTAL SHIK</a></li>
+					<li><a href="#">ХИТЫ</a></li>
+					<li><a href="#">БРЕНДЫ</a></li>
+					<li><a href="#">ИНФО</a></li>
+					<li><a href="">Доставка</a></li>
+					<li><a href="">Почему мы</a></li>
+					<li><a href="">О компании</a></li>
+					<li><a href="">О продукции</a></li>
+					<li><a href="">Для вашего бизнеса</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="global-wrap catalog-pg">
+		<!-- HEADER -->
+		<header>
+			<div class="header__inner container">
+				<!-- header__top -->
+				<div class="header__top">
+					<!-- sci -->
+					<div class="header__sci sci vt-center ">
+						<a class="sci__link sci__link--viber" href="https://msngr.link/vi/375447310101">
+							<svg>
+								<use href="./assets/img/components/header_footer/sprite.svg#viber-ic"></use>
+							</svg>
+						</a>
+						<a class="sci__link sci__link--tg" href="https://msngr.link/tg/375447310101">
+							<svg>
+								<use href="./assets/img/components/header_footer/sprite.svg#tg-ic"></use>
+							</svg>
+						</a>
+						<a class="sci__link sci__link--wp" href="https://msngr.link/wa/375447310101">
+							<svg>
+								<use href="./assets/img/components/header_footer/sprite.svg#wp-ic"></use>
+							</svg>
+						</a>
+						<a class="sci__link sci__link--tel" href="tel:88003332631">
+							8(800)&nbsp;<span>333-26-31</span>
+						</a>
+					</div>
+					<!-- search -->
+					<form class="header__search search" method="get" action="#">
+						<div class="search__inner flex">
+							<input class="search__input" type="text" value="" name="search" id="s"
+								placeholder="Поиск товаров">
+							<button class="search__btn" type="submit" aria-label="Искать">
+								<svg>
+									<use href="./assets/img/components/header_footer/sprite.svg#search-ic"></use>
+								</svg>
+							</button>
+						</div>
+					</form>
+					<!-- menu -->
+					<nav class="header__menu menu">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="">Доставка</a></li>
+							<li class="menu__item"><a href="">Почему мы</a></li>
+							<li class="menu__item"><a href="">О компании</a></li>
+							<li class="menu__item"><a href="">О продукции</a></li>
+							<li class="menu__item"><a href="">Для вашего бизнеса</a></li>
+						</ul>
+					</nav>
+					<!-- log in -->
+					<a class="header__btn-log-in btn-log-in" href="#">
+						<svg>
+							<use href="./assets/img/components/header_footer/sprite.svg#user-ic"></use>
+						</svg>
+						Войти
+					</a>
+				</div>
+				<!-- header middle -->
+				<div class="header__middle">
+					<!-- collback -->
+					<button class="btn-callback btn" type="button" aria-label="Заказать звонок">ЗАКАЗАТЬ ЗВОНОК</button>
+					<!-- logo -->
+					<a href="#" class="header__logo logo">
+						<span>lady</span>
+						<img src="./assets/img/logo-ic_1.png" alt="logo">
+						<span>bird</span>
+					</a>
+					<a class="btn-wholesale btn" href="">
+						<svg>
+							<use href="./assets/img/components/header_footer/sprite.svg#box-ic"></use>
+						</svg>
+						бижутерия оптом
+					</a>
+				</div>
+				<!-- header bottom -->
+				<div class="header__bottom">
+					<a class="header__sci-link sci-link" href="#">
+						<svg>
+							<use href="./assets/img/components/header_footer/sprite.svg#insta-ic"></use>
+						</svg>
+					</a>
+					<!-- category -->
+					<ul class="header__category-nav category-nav">
+						<li class="category-nav__item"><a href="#">ЭЛИТНАЯ БИЖУТЕРИЯ</a></li>
+						<li class="category-nav__item"><a href="#">GRANDE STELLA</a></li>
+						<li class="category-nav__item"><a href="#">CRYSTAL SHIK</a></li>
+						<li class="category-nav__item"><a href="#">ХИТЫ</a></li>
+						<li class="category-nav__item"><a href="#">БРЕНДЫ</a></li>
+						<li class="category-nav__item"><a href="#">ИНФО</a></li>
+					</ul>
+					<!-- basket -->
+					<a class="header__btn-basket btn-basket" href="#">
+						<svg>
+							<use href="./assets/img/components/header_footer/sprite.svg#basket-ic"></use>
+						</svg>
+					</a>
+					<!-- hamburger -->
+					<button class="header__hamburger hamburger" type="button"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<!-- BRED CRUMB	-->
+		<div class="bread-crumb">
+			<div class="bread-crumb__container container">
+				<a href="/" class="bread-crumb__item">ГЛАВНАЯ</a>
+				<span class="bread-crumb__item">КАТАЛОГ</span>
+			</div>
+		</div>
+		<!-- MAIN -->
+		<main>
+			<div class="container">
+				<div class="title-wrap">
+					<h1 class="title-1" data-aos="fade-down"><span>КАТАЛОГ</span></h1>
+				</div>
+				<!-- product filters -->
+				<div class="filter-prod">
+					<div class="filter-prod__inner flex">
+						<div class="filter-prod__col flex-wrap">
+							<p>Фильтр</p>
+						</div>
+						<div class="filter-prod__col flex-wrap disabled">
+							<p>СОРТИРОВКА</p>
+						</div>
+					</div>
+				</div>
+				<section class="catalog">
+					<div class="catalog__list">
+						<!-- product card -->
+						<article class="catalog__product-card product-card">
+							<div class="product-card__img"
+								style="background-image: url(./assets/img/pages/catalog/img-1.jpg)">
+							</div>
+							<div class="product-card__textBox flex-col">
+								<h5>Брошь/подвеска Синий кит</h5>
+								<div class="product-card__prices flex-col">
+									<b>1 000 000 BYN</b>
+									<span>1 000 000$</span>
+								</div>
+								<div class="product-card__btns flex">
+									<button class="product-card__basket btn-basket btn-basket--circ" type="button"
+										aria-label="В корзину">
+										<svg>
+											<use href="./assets/img/icons/sprite.svg#basket-ic"></use>
+										</svg>
+									</button>
+									<button class="product-card__buy btn btn--secondary" type="button"
+										aria-label="Купить">КУПИТЬ</button>
+								</div>
+							</div>
+						</article>
+						<!-- product card -->
+						<article class="catalog__product-card product-card">
+							<div class="product-card__img"
+								style="background-image: url(./assets/img/pages/catalog/img-2.jpg)">
+							</div>
+							<div class="product-card__textBox flex-col">
+								<h5>Брошь/подвеска Синий кит</h5>
+								<div class="product-card__prices flex-col">
+									<b>1 000 000 BYN</b>
+									<span>1 000 000$</span>
+								</div>
+								<div class="product-card__btns flex">
+									<button class="product-card__basket btn-basket btn-basket--circ" type="button"
+										aria-label="В корзину">
+										<svg>
+											<use href="./assets/img/icons/sprite.svg#basket-ic"></use>
+										</svg>
+									</button>
+									<button class="product-card__buy btn btn--secondary" type="button"
+										aria-label="Купить">КУПИТЬ</button>
+								</div>
+							</div>
+						</article>
+						<!-- product card -->
+						<article class="catalog__product-card product-card">
+							<div class="product-card__img"
+								style="background-image: url(./assets/img/pages/catalog/img-3.jpg)">
+							</div>
+							<div class="product-card__textBox flex-col">
+								<h5>Брошь/подвеска Синий кит</h5>
+								<div class="product-card__prices flex-col">
+									<b>1 000 000 BYN</b>
+									<span>1 000 000$</span>
+								</div>
+								<div class="product-card__btns flex">
+									<button class="product-card__basket btn-basket btn-basket--circ" type="button"
+										aria-label="В корзину">
+										<svg>
+											<use href="./assets/img/icons/sprite.svg#basket-ic"></use>
+										</svg>
+									</button>
+									<button class="product-card__buy btn btn--secondary" type="button"
+										aria-label="Купить">КУПИТЬ</button>
+								</div>
+							</div>
+						</article>
+						<!-- product card -->
+						<article class="catalog__product-card product-card">
+							<div class="product-card__img"
+								style="background-image: url(./assets/img/pages/catalog/img-4.jpg)">
+							</div>
+							<div class="product-card__textBox flex-col">
+								<h5>Брошь/подвеска Синий кит</h5>
+								<div class="product-card__prices flex-col">
+									<b>1 000 000 BYN</b>
+									<span>1 000 000$</span>
+								</div>
+								<div class="product-card__btns flex">
+									<button class="product-card__basket btn-basket btn-basket--circ" type="button"
+										aria-label="В корзину">
+										<svg>
+											<use href="./assets/img/icons/sprite.svg#basket-ic"></use>
+										</svg>
+									</button>
+									<button class="product-card__buy btn btn--secondary" type="button"
+										aria-label="Купить">КУПИТЬ</button>
+								</div>
+							</div>
+						</article>
+						<!-- product card -->
+						<article class="catalog__product-card product-card">
+							<div class="product-card__img"
+								style="background-image: url(./assets/img/pages/catalog/img-5.jpg)">
+							</div>
+							<div class="product-card__textBox flex-col">
+								<h5>Брошь/подвеска Синий кит</h5>
+								<div class="product-card__prices flex-col">
+									<b>1 000 000 BYN</b>
+									<span>1 000 000$</span>
+								</div>
+								<div class="product-card__btns flex">
+									<button class="product-card__basket btn-basket btn-basket--circ" type="button"
+										aria-label="В корзину">
+										<svg>
+											<use href="./assets/img/icons/sprite.svg#basket-ic"></use>
+										</svg>
+									</button>
+									<button class="product-card__buy btn btn--secondary" type="button"
+										aria-label="Купить">КУПИТЬ</button>
+								</div>
+							</div>
+						</article>
+						<!-- product card -->
+						<article class="catalog__product-card product-card">
+							<div class="product-card__img"
+								style="background-image: url(./assets/img/pages/catalog/img-6.jpg)">
+							</div>
+							<div class="product-card__textBox flex-col">
+								<h5>Брошь/подвеска Синий кит</h5>
+								<div class="product-card__prices flex-col">
+									<b>1 000 000 BYN</b>
+									<span>1 000 000$</span>
+								</div>
+								<div class="product-card__btns flex">
+									<button class="product-card__basket btn-basket btn-basket--circ" type="button"
+										aria-label="В корзину">
+										<svg>
+											<use href="./assets/img/icons/sprite.svg#basket-ic"></use>
+										</svg>
+									</button>
+									<button class="product-card__buy btn btn--secondary" type="button"
+										aria-label="Купить">КУПИТЬ</button>
+								</div>
+							</div>
+						</article>
+						<!-- product card -->
+						<article class="catalog__product-card product-card">
+							<div class="product-card__img"
+								style="background-image: url(./assets/img/pages/catalog/img-7.jpg)">
+							</div>
+							<div class="product-card__textBox flex-col">
+								<h5>Брошь/подвеска Синий кит</h5>
+								<div class="product-card__prices flex-col">
+									<b>1 000 000 BYN</b>
+									<span>1 000 000$</span>
+								</div>
+								<div class="product-card__btns flex">
+									<button class="product-card__basket btn-basket btn-basket--circ" type="button"
+										aria-label="В корзину">
+										<svg>
+											<use href="./assets/img/icons/sprite.svg#basket-ic"></use>
+										</svg>
+									</button>
+									<button class="product-card__buy btn btn--secondary" type="button"
+										aria-label="Купить">КУПИТЬ</button>
+								</div>
+							</div>
+						</article>
+						<!-- product card -->
+						<article class="catalog__product-card product-card">
+							<div class="product-card__img"
+								style="background-image: url(./assets/img/pages/catalog/img-8.jpg)">
+							</div>
+							<div class="product-card__textBox flex-col">
+								<h5>Брошь/подвеска Синий кит</h5>
+								<div class="product-card__prices flex-col">
+									<b>1 000 000 BYN</b>
+									<span>1 000 000$</span>
+								</div>
+								<div class="product-card__btns flex">
+									<button class="product-card__basket btn-basket btn-basket--circ" type="button"
+										aria-label="В корзину">
+										<svg>
+											<use href="./assets/img/icons/sprite.svg#basket-ic"></use>
+										</svg>
+									</button>
+									<button class="product-card__buy btn btn--secondary" type="button"
+										aria-label="Купить">КУПИТЬ</button>
+								</div>
+							</div>
+						</article>
+						<!-- product card -->
+						<article class="catalog__product-card product-card">
+							<div class="product-card__img"
+								style="background-image: url(./assets/img/pages/catalog/img-9.jpg)">
+							</div>
+							<div class="product-card__textBox flex-col">
+								<h5>Брошь/подвеска Синий кит</h5>
+								<div class="product-card__prices flex-col">
+									<b>1 000 000 BYN</b>
+									<span>1 000 000$</span>
+								</div>
+								<div class="product-card__btns flex">
+									<button class="product-card__basket btn-basket btn-basket--circ" type="button"
+										aria-label="В корзину">
+										<svg>
+											<use href="./assets/img/icons/sprite.svg#basket-ic"></use>
+										</svg>
+									</button>
+									<button class="product-card__buy btn btn--secondary" type="button"
+										aria-label="Купить">КУПИТЬ</button>
+								</div>
+							</div>
+						</article>
+					</div>
+				</section>
+				<!-- pagination -->
+				<ul class="products__pagination pagination">
+					<li class="page-item disabled"><a class="page-link" href="#">
+							<svg>
+								<use href="./assets/img/icons/sprite.svg#slider-arr"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="page-item active"><a class="page-link" href="blog/">1</a></li>
+					<li class="page-item"><a class="page-link" href="blog/?page=2">2</a></li>
+					<li class="page-item"><a class="page-link" href="blog/?page=3">3</a></li>
+					<li class="page-item"><a class="page-link" href="#">
+							<svg>
+								<use href="./assets/img/icons/sprite.svg#slider-arr"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</main>
+		<!-- FOOTER -->
+		<footer>
+			<div class="container">
+				<!-- footer top -->
+				<div class="footer__top">
+					<!-- logo -->
+					<a class="footer__logo logo" href="#">
+						<span>lady</span>
+						<img src="./assets/img/logo-ic_1.png" alt="логитип">
+						<span>bird</span>
+					</a>
+					<!-- menu -->
+					<nav class="footer__menu menu">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="">Доставка</a></li>
+							<li class="menu__item"><a href="">Почему мы</a></li>
+							<li class="menu__item"><a href="">О компании</a></li>
+							<li class="menu__item"><a href="">О продукции</a></li>
+							<li class="menu__item"><a href="">Для вашего бизнеса</a></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- footer middle -->
+				<div class="footer__middle flex">
+					<div class="footer__middle-col">
+						<p>LADYBIRD <br>
+							УНП 123123
+						</p>
+					</div>
+					<div class="footer__middle-col">
+						<p><a href="#">ЭЛИТНАЯ <br> БИЖУТЕРИЯ</a></p>
+						<p><a href="#">GRANDE STELLA</a>
+						<p><a href="#">CRYSTAL SHIK</a></p>
+					</div>
+					<div class="footer__middle-col">
+						<p><a href="#">ХИТЫ</a></p>
+						<p><a href="#">БРЕНДЫ</a>
+						<p><a href="#">ИНФО</a></p>
+					</div>
+					<div class="footer__middle-col">
+						<!-- sci -->
+						<div class="footer__sci sci vt-center ">
+							<a class="sci__link sci__link--viber" href="https://msngr.link/vi/375447310101">
+								<svg>
+									<use href="./assets/img/components/header_footer/sprite.svg#viber-ic"></use>
+								</svg>
+							</a>
+							<a class="sci__link sci__link--tg" href="https://msngr.link/tg/375447310101">
+								<svg>
+									<use href="./assets/img/components/header_footer/sprite.svg#tg-ic"></use>
+								</svg>
+							</a>
+							<a class="sci__link sci__link--wp" href="https://msngr.link/wa/375447310101">
+								<svg>
+									<use href="./assets/img/components/header_footer/sprite.svg#wp-ic"></use>
+								</svg>
+							</a>
+							<a class="sci__link sci__link--tel" href="tel:88003332631">
+								8(800)&nbsp;<span>333-26-31</span>
+							</a>
+						</div>
+						<a class="footer__firm-info firm-info firm-info--mail" href="mailto:info@ladybird">
+							<svg>
+								<use href="./assets/img/components/header_footer/sprite.svg#mail-ic"></use>
+							</svg>
+							<span>info@ladybird</span>
+						</a>
+						<a class="footer__sci-link sci-link sci-link--bg" href="#">
+							<svg>
+								<use href="./assets/img/components/header_footer/sprite.svg#insta-ic"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer__bottom">
+				<div class="container">
+					<p>КОПИРОВАНИЕ МАТЕРИАЛОВ САЙТА БЕЗ РАЗРЕШЕНИЯ ПРАВООБЛАДАТЕЛЯ ЗАПРЕЩЕНО</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- jquery -->
+	<script src="./assets/js/libraries/jquery.min.js"></script>
+	<!-- aos animate -->
+	<script src="./assets/js/libraries/aos.js"></script>
+	<!-- swiper -->
+	<script src="./assets/js/libraries/swiper-bundle.min.js"></script>
+	<!-- fotorama -->
+	<script src="./assets/js/libraries/fotorama.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>

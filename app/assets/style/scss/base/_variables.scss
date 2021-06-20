@@ -2,16 +2,20 @@
 VARIABLES
 ~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-$color-primary: #0749AA;
+$color-primary: #196E82;
+$basick-white: #fff;
+$basick-red: #EA2431;
+$basick-black: #000;
 
 :root {
 	/*font-family*/
-	--fm-1: "Roboto Condensed", sans-serif;
+	--fm-1: "Lato", sans-serif;
 
 	/*colors*/
-	--basic-black: #000;
+	--basick-black: #{$basick-black};
 	--basick-dark: #333;
-	--basick-white: #fff;
+	--basick-white: #{$basick-white};
+	--basick-red: #{$basick-red};
 	
 	--color-primary: #{$color-primary};
 }
@@ -19,8 +23,8 @@ $color-primary: #0749AA;
 //breakpoints
 $desctop: 1920;
 $desctop-mid: 1450;
-$desctop-min: 1170;
-$table: 970;
+$desctop-min: 1250;
+$table: 1024;
 $mobile: 768;
 $tel: 480;
 
